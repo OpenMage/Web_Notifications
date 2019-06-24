@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        {{ content }}
+    </section>
+    <section id="blog_posts_recent">
+        <h2>Recent Blogposts</h2>
+        <ul>
+        {% for post in site.posts limit:3 %}
+        <li class="blogpost_teaser">
+            <h3><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt }}</p>
+            <a href="{{ site.baseurl }}/{{ post.url }}">... read more</a>
+        </li>
+        {% endfor %}
+        </ul>
+    </section>
+</div>

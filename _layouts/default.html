@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description"
+          {% if page.excerpt %}
+          content="{{ page.excerpt | strip_html | truncatewords: 50 }}"
+          {% else %}
+          content="OpenMage-LTS : An archive of Magento + Community driven bug fixes"
+          {% endif %}
+    >
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+
+    <title>
+        {% if page.title %}
+        {{ page.title }} - OpenMage-LTS
+        {% else %}
+        OpenMage-LTS
+        {% endif %}
+    </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132624331-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-62512293-1');
+        gtag('config', 'UA-132624331-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% feed_meta %}
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/OpenMage/magento-lts">View on GitHub</a>
+        <div class="header_nav">
+            <a href="/magento-lts/">Home</a>
+            <a href="/magento-lts/install.html">Install</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/partners/index.html">Partner</a>
+            <a href="/magento-lts/suggested_modules.html">suggested modules</a>
+        </div>
+        <img src="/images/OMlogo_2_1.png" style="float:right;max-width:30%;background-color: white;border-radius: 10%;box-shadow: 1px 1px 10px -1px black"/>
+        <h1 id="project_title">Magento-LTS</h1>
+        <h2 id="project_tagline">An archive of Magento + Community driven bug fixes</h2>
+
+        <!--            <section id="downloads">
+                      <a class="zip_download_link" href="https://github.com/OpenMage/magento-lts/zipball/master">Download this project as a .zip file</a>
+                      <a class="tar_download_link" href="https://github.com/OpenMage/magento-lts/tarball/master">Download this project as a tar.gz file</a>
+                    </section> -->
+    </header>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        {{ content }}
+    </section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+        <div class="footer-socialmedia-container">
+            <a href="https://twitter.com/OpenMageProject">
+                <img src="/images/icons/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="https://www.facebook.com/OpenMage-1374303459372150">
+                <img src="/images/icons/facebook.svg" alt="Facebook"/>
+            </a>
+            <a href="https://www.linkedin.com/groups/13655485/">
+                <img src="/images/icons/linkedin.png" alt="LinkedIn"/>
+            </a>
+            <a href="https://discord.gg/EV8aNbU">
+                <img src="/images/icons/discord.svg" alt="Discord"/>
+            </a>
+
+        </div>
+        <p class="copyright">Magento-LTS maintained by <a href="https://github.com/OpenMage">OpenMage</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</div>
+
+
+</body>
+</html>

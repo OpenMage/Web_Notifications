@@ -1,0 +1,9 @@
+---
+baseurl: /Web_Notifications
+excerpt_separator: <!--more-->
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
