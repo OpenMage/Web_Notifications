@@ -1,0 +1,26 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="utf-8" ?>
+        <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+            <channel>
+                <atom:link href="https://openmage.github.io/Web_Notifications/notifications_v1.rss" rel="self" type="application/rss+xml" />
+                <title>OpenMage</title>
+                <link>https://openmage.github.io/magento-lts/</link>
+                <description>OpenMage - OpenMage-LTS</description>
+                <webMaster>https://github.com/OpenMage/Web_Notifications/issues</webMaster>
+                <language>en</language>
+                <lastBuildDate>Fri, 26 Jul 2019 19:21:53 UTC</lastBuildDate>
+                <ttl>300</ttl>
+
+                 {% for post in site.posts %}
+                 <item>
+                  <title>{{ post.title }}</title>
+                  <description>{{ post.description }}</description>
+                  <link>{{ post.url }}</link>
+                  <pubDate>{{ post.date }}</pubDate>
+                  <severity>{{ post.severity }</severity>
+                 </item>
+                 {% endfor %}
+            </channel>
+        </rss>
