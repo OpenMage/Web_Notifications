@@ -1,3 +1,5 @@
+## About This Repository
+
 This Repository is used to serve the Feed and the linked articles
 filling the Notifications of the OpenMage Admin Area.
 
@@ -12,6 +14,8 @@ Security related Patch Releases which link directly to the Magento Post, can be 
 
 
 
+
+## Local development
 
 run local jekyll:  
 ```
