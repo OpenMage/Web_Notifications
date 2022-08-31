@@ -3,3 +3,7 @@
     width: 56px;
     margin-right: 10px;
 }
+
+.footer-socialmedia-container > a > img {
+    max-width: 100%;
+}
